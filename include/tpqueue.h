@@ -4,11 +4,11 @@
 #include <string>
 template<typename T, int size>
 class TPQueue {
-  private:
+ private:
     T *arr;
     int head, tail, count;
 
-  public:
+ public:
     TPQueue():head(0), tail(0), count(0) {
         arr = new T[size];
     }
