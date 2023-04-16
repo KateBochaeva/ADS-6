@@ -46,7 +46,7 @@ template<typename T, int size>
             return udal;
         }
     }
-    };
+ };
 struct SYM {
   char ch;
   int prior;
