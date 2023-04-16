@@ -2,9 +2,8 @@
 #ifndef INCLUDE_TPQUEUE_H_
 #define INCLUDE_TPQUEUE_H_
 #include <string>
-
 template<typename T, int size>
- class TPQueue {
+class TPQueue {
   private:
     T *arr;
     int head, tail, count;
@@ -46,7 +45,7 @@ template<typename T, int size>
             return udal;
         }
     }
- };
+};
 struct SYM {
   char ch;
   int prior;
