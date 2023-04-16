@@ -9,19 +9,16 @@ class TPQueue {
     int head, tail, count;
 
  public:
-    TPQueue():head(0), tail(0), count(0) 
-    {
+    TPQueue():head(0), tail(0), count(0) {
         arr = new T[size];
     }
     ~TPQueue() {
         delete[] arr;
     }
-    bool isEmpty() const 
-    {
+    bool isEmpty() const {
         return count == 0;
     }
-    void push(const T& value) 
-    {
+    void push(const T& value) {
         if (size != count) {
             int per = tail;
             for (int i = head; i < tail; i++) {
@@ -39,8 +36,7 @@ class TPQueue {
         }
     }
     T pop() {
-        if (isEmpty()) 
-        {
+        if (isEmpty()) {
             throw std::string("Empty!");
         } else {
             T udal = arr[head];
